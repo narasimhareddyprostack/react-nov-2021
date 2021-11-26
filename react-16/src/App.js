@@ -1,12 +1,19 @@
-import Product from "./Product";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import React from "react";
+import Header from "./Header/Header";
+import User from "./User/User";
 let App = () => {
   return (
     <div>
-      <h2>Welcome to App Component</h2>
+      <nav>
+        <a href="/" alt="dummy Text">
+          Props Example
+        </a>
+      </nav>
       <hr />
-      <Product />
+      {/* <Header /> */}
+      <User />
     </div>
   );
 };
+
 export default App;
