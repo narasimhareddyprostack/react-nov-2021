@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
-import CompA from "./PropsDrilling/CompA";
-import Employee from "./Data/Employee";
+import Counter from "./Counter/Counter";
+import Message from "./Message/Message";
 function App() {
   return (
     <div>
       <Navbar />
-      {/*  <CompA /> */}
-      <Employee />
+      <Counter />
+      <hr />
+      <Message />
     </div>
   );
 }
