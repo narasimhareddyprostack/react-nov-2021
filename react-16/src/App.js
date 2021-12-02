@@ -1,15 +1,20 @@
-import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
-import CompA from "./PropsDrilling/CompA";
-import Employee from "./Data/Employee";
-function App() {
+import Home from "./Component/Home";
+import About from "./Component/About";
+import Contact from "./Component/Contact";
+let App = () => {
   return (
-    <div>
-      <Navbar />
-      {/*  <CompA /> */}
-      <Employee />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </Router>
+    </>
   );
-}
-
+};
 export default App;
