@@ -1,20 +1,22 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
-import Home from "./Component/Home";
-import About from "./Component/About";
-import Contact from "./Component/Contact";
-let App = () => {
+import StateEx from "./components/StateEx";
+import PropsEx from "./components/PropsEx";
+import Registration from "./components/Registration";
+function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <Routes>
+          <Route path="/stateex" element={<StateEx />} />
+          <Route path="/propsex" element={<PropsEx />} />
+          <Route path="/form" element={<Registration />} />
+        </Routes>
       </Router>
     </>
   );
-};
+}
+
 export default App;
