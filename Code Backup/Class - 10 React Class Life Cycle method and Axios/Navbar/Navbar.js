@@ -34,16 +34,9 @@ let Navbar = () => {
                 Form Handling
               </Link>
             </li>
-
             <li className="nav-item">
               <Link className="nav-link" to="user">
-                User
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className="nav-link" to="contact">
-                Contact App
+                Dummy API
               </Link>
             </li>
           </ul>

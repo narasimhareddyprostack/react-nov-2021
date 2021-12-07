@@ -4,7 +4,6 @@ import Navbar from "./Navbar/Navbar";
 import StateEx from "./components/StateEx";
 import PropsEx from "./components/PropsEx";
 import Registration from "./components/Registration";
-import ContactApp from "./ContactApp/ContactApp";
 import User from "./HTTPAPI/User";
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path="/propsex" element={<PropsEx />} />
           <Route path="/form" element={<Registration />} />
           <Route path="/user" element={<User />} />
-          <Route path="/contact" element={<ContactApp />} />
         </Routes>
       </Router>
     </>
