@@ -46,6 +46,16 @@ let Navbar = () => {
                 Contact App
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="cr">
+                Conditional Rendering
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="cr1">
+                Conditional Rendering Ex2
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
