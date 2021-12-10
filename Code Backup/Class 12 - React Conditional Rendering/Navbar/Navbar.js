@@ -19,19 +19,41 @@ let Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="showpassword">
-                Login-Password
+            <li className="nav-item active">
+              <Link className="nav-link" to="stateex">
+                State Ex
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="sms">
-                SMS
+              <Link className="nav-link" to="propsex">
+                Props Ex
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="digital">
-                Digital Clock
+              <Link className="nav-link" to="form">
+                Form Handling
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="user">
+                User
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="contact">
+                Contact App
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="cr">
+                Conditional Rendering
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="cr1">
+                Conditional Rendering Ex2
               </Link>
             </li>
           </ul>
