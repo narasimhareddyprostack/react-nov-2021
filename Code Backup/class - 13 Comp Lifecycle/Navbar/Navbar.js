@@ -4,7 +4,7 @@ let Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link className="navbar-brand" to="home">
-          React Hooks
+          React Routing - 6 V
         </Link>
         <button
           className="navbar-toggler"
@@ -20,19 +20,18 @@ let Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="message">
-                useState Example
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className="nav-link" to="counter">
-                useState -- Counter Example
+              <Link className="nav-link" to="showpassword">
+                Login-Password
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="product">
-                useState -- Product Example
+              <Link className="nav-link" to="sms">
+                SMS
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="digital">
+                Digital Clock
               </Link>
             </li>
           </ul>
