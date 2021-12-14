@@ -4,7 +4,7 @@ let Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link className="navbar-brand" to="home">
-          React Hooks - Form Handling
+          React Hooks
         </Link>
         <button
           className="navbar-toggler"
@@ -26,8 +26,13 @@ let Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="login">
-                Form Handling - useState Example
+              <Link className="nav-link" to="counter">
+                useState -- Counter Example
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="product">
+                useState -- Product Example
               </Link>
             </li>
           </ul>
