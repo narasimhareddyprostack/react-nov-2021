@@ -4,7 +4,7 @@ let Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link className="navbar-brand" to="home">
-          React Redux Example
+          React Hooks - Form Handling
         </Link>
         <button
           className="navbar-toggler"
@@ -21,7 +21,13 @@ let Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="message">
-                Message
+                useState Example
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="login">
+                Form Handling - useState Example
               </Link>
             </li>
           </ul>
