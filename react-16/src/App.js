@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
+import Counter from "./Counter/Counter";
 import Message from "./Message/Message";
-import {} from "./redux/store";
+import { store } from "./redux/store";
 import { Provider } from "react-redux";
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/message" element={<Message />} />
+            <Route path="/counter" element={<Counter />} />
           </Routes>
         </Router>
       </Provider>
