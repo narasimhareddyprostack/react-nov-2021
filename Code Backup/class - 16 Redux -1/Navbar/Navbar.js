@@ -4,7 +4,7 @@ let Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link className="navbar-brand" to="home">
-          React Life Cycle Methods
+          React Redux Example
         </Link>
         <button
           className="navbar-toggler"
@@ -20,13 +20,13 @@ let Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="user">
-                User
+              <Link className="nav-link" to="message">
+                Message
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="time">
-                Digital
+              <Link className="nav-link" to="counter">
+                Counter
               </Link>
             </li>
           </ul>

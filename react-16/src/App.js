@@ -1,24 +1,19 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import User from "./User/User";
 import Navbar from "./Navbar/Navbar";
-import Counter from "./Counter/Counter";
-import Message from "./Message/Message";
-import { store } from "./redux/store";
-import { Provider } from "react-redux";
-function App() {
+import Digital from "./Digital/Digital";
+import DigitalFun from "./Digital/DigtalFun";
+let App = () => {
   return (
     <>
-      <Provider store={store}>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/message" element={<Message />} />
-            <Route path="/counter" element={<Counter />} />
-          </Routes>
-        </Router>
-      </Provider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/user" element={<User />} />
+          <Route path="/time" element={<Digital />} />
+        </Routes>
+      </Router>
     </>
   );
-}
-
+};
 export default App;
